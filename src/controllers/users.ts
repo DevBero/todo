@@ -17,7 +17,6 @@ export const getAllUsers: any = async (req: express.Request, res: express.Respon
 export const deleteUser: any = async (req: express.Request, res: express.Response) => {
     try {
         const { id } = req.params;
-
         const deleteUser = await deleteUserById(id);
 
         return res.json(deleteUser)
